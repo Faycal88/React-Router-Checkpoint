@@ -7,10 +7,8 @@ import { useFetch } from "./fetch";
 export default function MovieDetails() {
   const { movies, setMovie } = useContext(MoviesContext);
     let params = useParams();
-    let navigator = useNavigate();
-    function ReturnHome() {
-        navigator("./Showtime");
-    }
+    let navigate = useNavigate();
+    
 
   let mov = movies.find((movie) => movie.id == params.MovieId);
   const { MovieId } = params;
@@ -57,7 +55,7 @@ export default function MovieDetails() {
           <button type="submit">Submit Changes</button>
         </form>
       </div>
-      <button onClick={ReturnHome()}>back</button>
+      <button onClick={()=> navigate('/')}>back to home</button>  
     </div>
   );
 }

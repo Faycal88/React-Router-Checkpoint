@@ -3,10 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Sidebar from './Sidebar';
+import Navbar from './Navbar';
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <App />
+      <Sidebar />
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -1,0 +1,28 @@
+.posters {
+    display: flex;
+    overflow-x: scroll;
+  }
+  .posters img {
+    width: 150px;
+  }
+  .moviecart{
+      padding: 1rem;
+      height: 26em;
+      width: 20em;
+      
+  }
+  .tag {
+    display: inline-block;
+    min-width: 2em;
+    padding: 0.25em 0.25em;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 999px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .contain{
+    display: block;
+    overflow-y: hidden;
+  }
+  
+ 

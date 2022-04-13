@@ -1,0 +1,44 @@
+.sidebar{
+    position: fixed;
+    height: 100%;
+    top: 0;
+}
+
+.sidelist{
+    display: flex;
+    height: 80vh;
+    margin: 0% 0%;
+    justify-content: space-between;
+    padding-left: 0;
+    flex-direction: column;
+    
+}
+.sidelist li{
+    align-items: center;
+    padding: 0.5em;
+    margin: 0.5em;
+    border-radius: 20px;
+    background-color: #322f2f;
+    color: white;
+    font-family: 'Audiowide', sans-serif;
+    font-weight: 400;
+}
+.sidelist li:after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px var(--primary_color);;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+  }
+.sidelist li:hover:after { transform: scaleX(1); }
+.sidelist li:after{  transform-origin:  0% 50%; }
+.svgaside {
+    background-color: transparent;
+  }
+  .sidesvg {
+    display: flex;
+    background-color: var(--primary_color);
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+  }

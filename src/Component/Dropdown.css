@@ -1,0 +1,35 @@
+body{
+    color: white;
+}
+.dropdown {
+    position: relative;
+    background: transparent;
+    margin: 50px;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='yellow' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: -10px;
+  background-position-y: 5px;
+  }
+  .dropdown .btn {
+    background-color: transparent;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    offset: 0;
+  }
+  .dropdown .options {
+    position: absolute;
+    right: 0;
+    background-color: transparent;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    width: 8em;
+  }
+  
+  .dropdown .options a {
+    color: var(--bg-color);
+    text-decoration: none;
+  }
+  
